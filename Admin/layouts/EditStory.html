@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chỉnh sửa sản phẩm</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	<main>
+		<div class="sidbar_left">
+			<div class="logo">
+				CMS
+			</div>
+			<div class="menu_sidebar">
+				<ul>
+					<li>
+						<a href="./AccountManager.html" class="menu-active">Tài khoản</a>
+					</li>
+					<li>
+						<a href="./AddProduct.html">Thêm sản phẩm</a>
+					</li>
+
+					<li>
+						<a href="./storylist.html">Sản phẩm</a>
+					</li>
+					<li>
+						<a href="#">Tin Tức</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top_content">
+				<div class="top_left">
+					<button type="button" id="show_hide_sidebar">
+						<i class="fas fa-bars"></i>
+					</button>
+					<form method="GET" action="#" class="ml-4">
+						<div class="input-group">
+							<input type="text" name="keywrod" class="form-control" placeholder="Tìm kiếm ...">
+							<div class="input-group-append">
+								<button type="submit" class="btn">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="top_right">
+					<div class="btn-group" style="margin-left: 500px;">
+						<img src="../images/logo.png" width="20%" style="padding-left: 0;" />
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Đăng nhập
+						</button>
+						<div class="dropdown-menu dropdown-menu-right">
+							<button class="dropdown-item" type="button">Profile</button>
+							<button class="dropdown-item" type="button">Setting</button>
+							<button class="dropdown-item" type="button">Change Password</button>
+							<button class="dropdown-item" type="button">Logout</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_content">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item"><a href="./storylist.html"></a>Sản phẩm</li>
+						<li class="breadcrumb-item active" aria-current="page">Chỉnh sửa sản phẩm</li>
+					</ol>
+				</nav>
+				<h2>Chỉnh sửa sản phẩm</h2>
+				<div class="content_form">
+					<form method="POST" action="">
+						<div class="row">
+							<div class="col-3 ml-3">
+								<img src="../images/sp_7.jpg">
+							</div>
+							<div class="col-6">
+								<span class="sp-name">Tên: Bamboo Detox Mask Làm Sạch Sâu Cho Da Sáng Mịn</span><br/>
+								<span class="sp-other-name">Thương hiệu: Khác</span><br/>
+								<span class="sp-author">Mô tả: Giới tính: Unisex
+
+																				- Dành cho mọi loại da
+																				- Công dụng:
+
+																				Làm sạch sâu lỗ chân lông
+
+																				kiềm dầu
+
+																				hỗ trợ trị mụn 
+
+
+																				- Thành phần: 
+
+																				Bột than tre , chiết xuất lô hội, collagen, vitamin E...
+
+																				- Cách sử dụng:
+
+																				Rửa sạch mặt, thoa mặt nạ đắp 15 phút rồi rửa lại với nước
+																				- Dung tích: 100 ml</span><br/>
+								<span class="sp-chapter-number">Số lượng:200</span><br/>
+								<span class="sp-descript">Giá bán: 280.000đ </span></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<label for="story_other_name">Ảnh bìa</label>
+								<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">Upload</span>
+								</div>
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile01">
+									<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<div class="form-group">
+									<label for="story_name">Tên sản phẩm</label>
+									<input type="text" id="story_name" name="story_name" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="author">Giá bán</label>
+									<input type="text" id="author" name="author" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="story_other_name">Thương hiệu</label>
+									<input type="text" id="story_other_name" name="story_other_name" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="author">Số lượng</label>
+									<input type="text" id="author" name="author" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="slt_category">Loại sản phẩm</label>
+									<select name="category" class="form-control" id="slt_category">
+										<option value="">Chọn loại sản phẩm</option>
+										<option value="1">Chăm sóc da</option>
+										<option value="2">Chăm sóc tóc</option>
+										<option value="3">Son</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="input_desc">Mô tả</label>
+									<textarea class="description form-control" id="input_desc" rows="5" cols="50"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-7"></div>
+							<div class="col-5">
+								<button class="btn" type="submit">Thêm vào giỏ</button>
+								<button class="btn" type="submit">Mua ngay</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column_description">
+								<button class="btn btn-save" type="submit">Lưu</button>
+								<button class="btn btn-cancel" type="button">Hủy</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+</html>

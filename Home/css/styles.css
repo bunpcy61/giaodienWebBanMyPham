@@ -1,0 +1,242 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url("../images/background.jpg");
+    background-attachment:scroll;
+    background-attachment: fixed;
+
+}
+
+.rounded-circle1{
+	
+	transition:6s;
+	animation: xoayvong 6s linear 0s infinite;
+	width: 16%;
+}
+.bg_dark{
+	background-color:#66CCFF;
+}
+.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.top_header{
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+    height: 178px;
+    position: relative;
+	
+}
+.top_header .opa{
+	font-weight: bold;
+	font-size: 20px;
+	
+	display: flex;
+	position: absolute;
+    z-index:999;
+    width: 100%;
+
+}
+.top_header::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index:-99;
+  background-color: #8B8989;
+  background-size: cover;
+  opacity: 0.6;
+}
+.chuChay{
+	color: #FFB90F;
+	text-shadow: 3px 5px black;
+	font-size: 30px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	animation: chayChu 3s forwards;
+	transition:3s;
+	text-align: center;
+
+}
+.logo{
+	display: flex;
+
+}
+.logo li{
+	list-style-type: none ;
+}
+.product{
+	background-color: white;
+}
+hr{
+	background-color: white;
+}
+@-webkit-keyframes xoayvong{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes phongto{
+   from{
+   	   	transform: scale(0);
+   }
+   to{
+   		transform: scale(1);
+   }
+}
+@-webkit-keyframes chayChu{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: -1800px;
+   	   	transform: rotate(-90deg)
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: -150;
+
+   }
+}
+@-webkit-keyframes xemSP{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: 50px;
+
+   }
+}
+@-webkit-keyframes xemSP2{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-right: 50px;
+
+   }
+}
+@-webkit-keyframes danhGia{
+   from{
+   	   	opacity: 0;
+   	   	top: 280px;
+   }
+   to{
+   		opacity: 0.9;
+   	   	top: 180px;
+
+   }
+}
+.card_add{
+	display: flex;
+}
+.card_add a{
+	text-align: center;
+	margin-left: 2.5px;
+}
+.card-img-top{
+	position: relative;
+}
+.anh_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 250px;
+	opacity: 0;
+}
+.danhGia{
+	position: absolute;
+	top: 250px;
+	background-color:#FFE7BA;
+	color: black;
+	justify-content: space-between;
+	padding: 15px 62px 15px 15px;
+	opacity: 0.8;
+	opacity: 0;
+}
+
+.danhGia a i{
+	color:#FFB90F;
+	font-size: 25px;
+}
+.anh1_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 250px;
+	right: 0;
+	opacity: 0;
+	
+
+}
+.card:hover .anh_hover{
+	opacity: 1;
+	animation: xemSP 1s forwards;
+	transition: 2s;
+}
+
+.card:hover .anh1_hover{
+	opacity: 1;
+	animation: xemSP2 1s forwards;
+	transition: 2s;
+
+}
+.card:hover .danhGia{
+	opacity: 0.9;
+	animation: danhGia 1s forwards;
+	transition: 1s;
+	
+}
+.card:hover{
+	padding: 5px;
+}
+.card_hover:hover{
+	padding: 5px;
+}
+.card_hover{
+	border: 1px solid yellow;
+}
+@media screen and (max-width: 768px){
+	.top_header{
+		width: 100%;
+		height: 50px;
+	}
+	.rounded-circle1{
+		display: none;
+	}
+	.chuChay{
+		display: none;
+	}
+}
+@media screen and (max-width: 1199px){
+	.card_add{
+		margin-left: -17px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.card_add{
+		margin-left: -4px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.card_add{
+		margin-left: 0px;
+	}
+}
+//------------------------CSSfooter------------------------------------------
